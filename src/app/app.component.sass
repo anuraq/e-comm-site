@@ -1,0 +1,73 @@
+
+ $primary-color: rgb(148, 54, 201)
+ $second-color: rgb(104, 38, 143)
+ 
+*
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    
+
+.toolbar
+    height: 60px
+    display: flex
+    align-items: center
+    background: linear-gradient(to top, $second-color, $primary-color)
+    color: white
+    font-weight: 600
+
+    img
+        margin: 0 16px
+
+    span
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+        font-size: 30px
+        color: #fff
+        padding-bottom: 8px
+        box-sizing: border-box
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+    
+    input
+        height: 35px
+        width: 100%
+        border-radius: 20px 0 0 20px
+        padding-left: 20px
+        font-size: 24px
+
+    .input-field
+        flex: 1
+        display: flex
+        margin: 0 20px
+
+    .search-btn
+        height: 41px
+        width: 55px
+        background-color: black
+
+.sub-toolbar
+    height: 40px
+    display: flex
+    background-color: darken($primary-color, 5%)
+
+    ul
+        margin: 0
+        list-style-type: none
+        display: flex
+
+        li
+            height: 40px
+            padding: 7px
+            margin-right: 10px
+            box-sizing: border-box
+            color: white
+            font-size: 20px
+
+            &:hover
+                background: darken($primary-color, 15%)
+    
+    .spacer
+        flex: 1
+
+    .seller
+        font-size: 20px
+        padding: 7px
+                
