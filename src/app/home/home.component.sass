@@ -1,0 +1,41 @@
+.slider::-webkit-scrollbar
+  width: 10px
+  height: 10px
+
+.slider::-webkit-scrollbar-thumb
+  background: black
+  border-radius: 10px
+
+.slider::-webkit-scrollbar-track
+  background: transparent
+
+    
+.carousel
+    overflow: hidden
+    width: 100%
+    .slider
+        display: flex
+        overflow-x: scroll
+        overflow-y: hidden
+        background-color: white
+        //scroll-snap-type: x mandatory
+        //transition: all 0.5s
+        user-select: none
+        cursor: -webkit-grab
+        cursor: grab
+        //scroll-behavior: smooth
+        //scroll-snap-points-x: repeat(300px)
+        //-webkit-overflow-scrolling: touch
+
+    .active
+      cursor: grabbing
+      cursor: -webkit-grabbing
+
+    div
+        height: 300px
+        width: 100%
+        scroll-snap-align: start
+        margin-right: 50px
+        font-size: 100px
+        flex-shrink: 0
+        background-color: #a86565

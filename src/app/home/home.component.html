@@ -1,1 +1,16 @@
-<p>home works!</p>
+<div class="carousel">
+    <div #slider
+        (mousedown)="mousePress($event)"
+         (mouseup)="mouseRelease($event)" 
+         (mousemove)="mouseMove($event)"
+         (mouseleave)="mouseRelease($event)"
+        class="slider">
+        <div class="slides">1</div>
+        <div class="slides">2</div>
+        <div class="slides">3</div>
+        <div class="slides">4</div>
+    </div>
+</div>
+
+<button id="prevBtn">prev</button>
+<button id="nextBtn">next</button>
